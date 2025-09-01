@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import '../css/styling.css'
+import '../css/styling.css';
+import LikeButton from './like-button';
 
       // <script type="text/javascript">
 
@@ -27,7 +28,7 @@ import '../css/styling.css'
 
   export default function Homepage() {
     const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
-    const [likes, setLikes]= useState(0);
+
 
     function handleClick() {
       setLikes(likes+1);
@@ -41,7 +42,7 @@ import '../css/styling.css'
         <li key={name}>{name}</li>
         ))}
         </ul>
-        <button onClick={handleClick}>Like({likes})</button>
+        <LikeButton />
       </>
     );
   }
