@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import '../css/styling.css';
 import LikeButton from './like-button';
 
@@ -28,11 +27,6 @@ import LikeButton from './like-button';
 
   export default function Homepage() {
     const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
-
-
-    function handleClick() {
-      setLikes(likes+1);
-    }
 
     return (<>
       <div> <Header title="React"/> </div>
